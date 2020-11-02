@@ -1,0 +1,97 @@
+<script>
+$(document).ready(function() { 
+    $('#pamphlets_form').ajaxForm({ 
+        target: '#pamphlets_out', 
+         success: function() { 
+            $('#pamphlets_out').fadeIn('slow'); 
+        } 
+    }); 
+});
+
+</script>
+
+
+<table>
+	<tr>
+		<td>
+		
+		<a><strong>பிரசுரம் பற்றிய தகவல்களை உள்ளிடுங்கள்</strong>:</a> <br />
+		<br />
+		<br />
+		<form id="pamphlets_form" action="pamphlets_engine.php" method="post">
+		<table>
+			<tbody>
+				<tr>
+					<td>நூலக எண்</td>
+					<td><input type="text" name="no"></td>
+					<td id="grey">1243</td>
+				<tr>
+					<td>தலைப்பு</td>
+					<td><input type="text" name="title"></td>
+					<td id="grey">தரப்பட்டுள்ள அவகாசம்</td>
+				</tr>
+				<tr>
+					<td>ஆசிரியர்</td>
+					<td><input type="text" name="auth"></td>
+					<td id="grey">ஜபார், நேசன், சுந்தர்</td>
+				</tr>
+
+				<tr>
+					<td>வகை</td>
+					<td><input type="text" name="cat"></td>
+					<td id="grey">கவிதை, அரசியல்</td>
+				</tr>
+
+				<tr>
+					<td>பதிப்பகம்</td>
+					<td><input type="text" name="pub"></td>
+					<td id="grey">வீ ஜே பதிப்பகம், ஆகவே பதிப்பகம்</td>
+				</tr>
+				<tr>
+					<td>பதிப்பு ஆண்டு</td>
+					<td><input type="text" name="year"></td>
+					<td id="grey">1992</td>
+				</tr>
+				<tr>
+					<td>பக்கங்கள்</td>
+					<td><input type="text" name="page"></td>
+					<td id="grey">43</td>
+				</tr>
+				<tr>
+				<td>மொழி</td>
+				<td><SELECT name="language">
+					<OPTION>தமிழ்</OPTION>
+					<OPTION>ஆங்கிலம்</OPTION>
+				</SELECT></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="checkbox" name="pdf" value="yes">பிரசுரத்தின்
+					pdf வடிவம் உள்ளது</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="checkbox" name="html" value="yes">பிரசுரத்தின்
+					html வடிவம் உள்ளது</td>
+				</tr>
+
+				<tr>
+					<td></td>
+					<td><input type="checkbox" name="cover" value="yes">அட்டைப்படம்
+					கைவசம் உண்டு.</td>
+
+				</tr>
+
+
+			</tbody>
+		</table>
+		<br />
+		<input type="submit" name="ok" value="உருவாக்குக">
+		</form>
+		</td>
+
+		<td>
+
+		<div id="pamphlets_out"></div>
+	</tr>
+</table>

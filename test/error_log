@@ -1,0 +1,11 @@
+[17-Sep-2008 03:36:42] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'noolaham'@'localhost' (using password: NO) in /home/noolaham/public_html/lab/test/hotpages.php on line 3
+[17-Sep-2008 03:38:39] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'noolaham'@'localhost' (using password: NO) in /home/noolaham/public_html/lab/test/hotpages.php on line 3
+[17-Sep-2008 03:40:34] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/noolaham/public_html/lab/test/hotpages.php on line 25
+[17-Sep-2008 13:39:57] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/noolaham/public_html/lab/test/booklist.php on line 21
+[17-Sep-2008 13:50:34] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/noolaham/public_html/lab/test/booklist.php on line 21
+[17-Sep-2008 13:57:53] PHP Parse error:  syntax error, unexpected T_ELSE in /home/noolaham/public_html/lab/test/booklist.php on line 45
+[17-Sep-2008 15:05:17] PHP Parse error:  syntax error, unexpected ')' in /home/noolaham/public_html/lab/test/image.php on line 19
+[17-Sep-2008 15:06:12] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/noolaham/public_html/lab/test/image.php:14) in /home/noolaham/public_html/lab/test/image.php on line 15
+[17-Sep-2008 15:06:13] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/noolaham/public_html/lab/test/image.php:14) in /home/noolaham/public_html/lab/test/image.php on line 15
+[18-Sep-2008 03:56:30] PHP Fatal error:  Call to undefined function  headwer() in /home/noolaham/public_html/lab/test/image.php on line 24
+[18-Sep-2008 03:57:01] PHP Fatal error:  Call to undefined function  headwer() in /home/noolaham/public_html/lab/test/image.php on line 24

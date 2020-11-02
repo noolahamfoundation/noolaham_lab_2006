@@ -1,0 +1,84 @@
+<script>
+$(document).ready(function() { 
+    $('#paper_form').ajaxForm({ 
+        target: '#paper_out', 
+         success: function() { 
+            $('#paper_out').fadeIn('slow'); 
+        } 
+    }); 
+});
+
+</script>
+
+
+<table>
+	<tr>
+		<td>
+<a><strong>பத்திரிகை பற்றிய தகவல்களை உள்ளிடுங்கள்</strong>:</a>
+<br />
+<br />
+<br />
+		<form id="paper_form" action="paper_engine.php" method="post">
+  <table>
+  <tbody>
+    <tr>
+      <td>நூலக எண் </td>
+      <td><input type="text" name="paper_no"></td>
+      <td id="grey">1243</td>
+    </tr>
+    <tr>
+      <td>தலைப்பு </td>
+      <td><input type="text" name="paper_title"></td>
+      <td id="grey">வீரகேசரி</td>
+    </tr>
+    <tr>
+      <td>எண் </td>
+      <td><input type="text" name="paper_magno"></td>
+     <td id="grey">12.14</td>
+    </tr>
+    <tr>
+      <td>வெளியீடு </td>
+      <td><input type="text" name="paper_per"></td>
+     <td id="grey">ஜனவரி - மார்ச்</td>
+    </tr>
+    <tr>
+      <td>ஆண்டு </td>
+      <td><input type="text" name="paper_year"></td>
+      <td id="grey">1987</td>
+    </tr>
+    <tr>
+      <td>சுழற்சி </td>
+      <td><input type="text" name="paper_circ"></td>
+      <td id="grey"> மாதமிருமுறை</td>
+    </tr>
+
+    <tr>
+      <td>பக்கம் </td>
+      <td><input type="text" name="paper_page"></td>
+      <td id="grey">12</td>
+    </tr>
+    <tr>
+      <td>மொழி</td>
+      <td><SELECT name="paper_lang">
+            <OPTION>தமிழ்</OPTION>
+	    <OPTION>ஆங்கிலம்</OPTION> 
+          </SELECT></td>
+    </tr>
+       <tr>
+      <td></td>
+      <td><input type="checkbox" name="paper_cover" value="yes">அட்டைப்படம் கைவசம் உண்டு </td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<input type="submit" name="ok" value="உருவாக்குக">
+</form>
+
+		</td>
+
+		<td>
+
+		<div id="paper_out"></div>
+	</tr>
+</table>
+
